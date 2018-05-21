@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="icon" href="../images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="http://static9.pplive.cn/pub/weixin/v_20170602145855/wxajax.js"></script>
+
+    <title>应用导航</title>
+    <script type="text/javascript">
+        (function (designW) {
+            var docEl = document.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 100 * (clientWidth / designW) + 'px';
+                };
+            if (!document.addEventListener) return;
+            recalc();
+            window.addEventListener(resizeEvt, recalc, false);
+            document.addEventListener('DOMContentLoaded', recalc, false);
+        })(750);
+    </script>
+</head>
+
+<body>
+    <div class="weaper">
+        <div class="indeximg">
+            <div class="conbox">
+                <ul>
+                    <li>
+                        <a href="/tianqi">
+                            上海天气查询
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/joke">
+                            搞笑动图GIF
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/imgjoke">
+                            搞笑图片^_^
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/history">
+                            历史今天大事件
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="../js/home.js"></script>
+
+</body>
+
+</html>

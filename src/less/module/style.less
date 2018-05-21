@@ -1,0 +1,170 @@
+.top { width: 7rem;padding: 0 .25rem; height: 1.2rem; 
+    margin: 0 auto; text-align: center;
+     background-color: rgba(33, 33, 33, 0.5); 
+    }
+
+h1 { 
+    height:1.2rem; line-height:1.2rem; 
+}
+
+h1 span { 
+    position: relative; 
+        top: 15px;
+     display:inline-block; 
+    animation: bounce .5s ease infinite alternate;
+     font-family: 'Titan One', cursive; 
+     font-size: 24px;
+      color: #FFF;
+      text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+ }
+
+h1 span:nth-child(2) { animation-delay: .1s; }
+
+h1 span:nth-child(3) { animation-delay: .2s; }
+
+h1 span:nth-child(4) { animation-delay: .3s; }
+
+h1 span:nth-child(5) { animation-delay: .4s; }
+
+h1 span:nth-child(6) { animation-delay: .5s; }
+
+
+@keyframes bounce {
+     100% { top: -15px; 
+        text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 #CCC, 0 7px 0 #CCC, 0 8px 0 #CCC, 0 9px 0 #CCC, 0 10px 10px rgba(0, 0, 0, 0.2); } 
+
+    }
+
+.weaper{
+    width: 100%;
+    height: 100%;
+    .hd{
+        width: 7rem;
+        height: 1rem;
+        padding: 0 .25rem;
+        background: #333;
+        height: 1rem;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        text-align: center;
+        line-height: 1rem;
+        font-size: .42rem;
+        color: #fcfcfc;
+        a{
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1rem;
+            height: 1rem;
+            padding-left: .24rem;
+            font-size: .32rem;
+            color: #fff;
+           i{
+               display: inline-block;
+               width: 0.32rem;
+               height: 0.32rem;
+               position: absolute;
+               top: 50%;
+               left: 0.05rem;
+               margin-top: -.16rem;
+                background: url("../../images/go-back.png") no-repeat left center;
+                background-size: contain;
+           }
+        }
+    }
+}
+.indeximg{
+    width: 7.5rem;
+    height: 100%;
+    overflow: hidden;
+    background: url("../../images/indeximg.jpg") no-repeat;
+    background-size: 100% 100%;
+    .conbox{
+        height: 100%;
+        ul{
+            display: -webkit-flex; /* Safari */
+            display: flex;
+            flex-flow:row nowrap;
+            flex-wrap:wrap;
+            justify-content:center;
+            padding-top: 1.5rem;
+            .cf;
+            li{
+                width: 5rem;
+                height: 1.5rem;
+                margin:.25rem;
+                line-height: 1.5rem;
+                box-shadow: 10px 15px 5px rgba(9, 55, 96, 0.4);
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    font-weight: 600;
+                    font-size: .48rem;
+                    font-family: "STKaiti";
+                    text-align: center;
+                    color: #fcfcfc;
+                    background: rgba(197, 223, 248, 0.3);
+                    text-shadow: 1px 1px 0 #656C75;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// 搞笑图片
+.img_joke{
+    width: 7rem;
+    padding-top: 1.2rem;
+    padding: 0 .25rem;
+    background: #f8f8f8;
+    .imglist{
+        margin: .08rem 0 .4rem;
+        padding-top: .3rem;
+        border-top: 1px solid #969696;
+        
+        img{
+            display: block;
+            width: 5rem;
+            height: 5rem;
+            margin: 0 auto;
+        }
+    }
+}
+// 搞笑动图
+.gif_joke{
+    width: 7rem;
+    padding: 0 .25rem;
+ padding-top: 1.2rem;
+    
+    .gifList{
+        width: 3rem;
+        height: 3rem;
+        float: left;
+        margin-left:.5rem;
+        margin-bottom: .25rem;
+        overflow: hidden;
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        flex-flow:row nowrap;
+        justify-content:center;
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+    }
+}

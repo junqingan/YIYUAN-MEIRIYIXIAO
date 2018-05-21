@@ -1,0 +1,495 @@
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before,
+q:after {
+  content: '';
+}
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-size: 100%;
+}
+legend {
+  color: #000;
+}
+input[type=button],
+input[type=submit],
+input[type=reset] {
+  -webkit-appearance: none;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: bold 0.55px "微软雅黑", "Lucida Grande", "Lucida Sans", Helvetica, Arial, Sans;
+  font-size: .24rem;
+}
+strong,
+b {
+  font-weight: bold;
+}
+textarea,
+input {
+  resize: none;
+  outline: none;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  font-size: 20px;
+}
+h2 {
+  font-size: 16px;
+}
+h3 {
+  font-size: 14px;
+}
+h4,
+h5,
+h6 {
+  font-size: 12px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  zoom: 1;
+}
+.hidden {
+  display: none;
+}
+.iframe-blank {
+  border: none;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  opacity: 0;
+  background: #fff;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  position: absolute;
+  display: block;
+}
+.wp-grid {
+  width: 7.5rem;
+  background: #fafafa;
+}
+.top {
+  width: 7rem;
+  padding: 0 .25rem;
+  height: 1.2rem;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(33, 33, 33, 0.5);
+}
+h1 {
+  height: 1.2rem;
+  line-height: 1.2rem;
+}
+h1 span {
+  position: relative;
+  top: 15px;
+  display: inline-block;
+  animation: bounce .5s ease infinite alternate;
+  font-family: 'Titan One', cursive;
+  font-size: 24px;
+  color: #FFF;
+  text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+h1 span:nth-child(2) {
+  animation-delay: .1s;
+}
+h1 span:nth-child(3) {
+  animation-delay: .2s;
+}
+h1 span:nth-child(4) {
+  animation-delay: .3s;
+}
+h1 span:nth-child(5) {
+  animation-delay: .4s;
+}
+h1 span:nth-child(6) {
+  animation-delay: .5s;
+}
+@keyframes bounce {
+  100% {
+    top: -15px;
+    text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 #CCC, 0 7px 0 #CCC, 0 8px 0 #CCC, 0 9px 0 #CCC, 0 10px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+.weaper {
+  width: 100%;
+  height: 100%;
+}
+.weaper .hd {
+  width: 7rem;
+  padding: 0 .25rem;
+  background: #333;
+  height: 1rem;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  line-height: 1rem;
+  font-size: .42rem;
+  color: #fcfcfc;
+}
+.weaper .hd a {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  padding-left: .24rem;
+  font-size: .32rem;
+  color: #fff;
+}
+.weaper .hd a i {
+  display: inline-block;
+  width: 0.32rem;
+  height: 0.32rem;
+  position: absolute;
+  top: 50%;
+  left: 0.05rem;
+  margin-top: -0.16rem;
+  background: url("../../images/go-back.png") no-repeat left center;
+  background-size: contain;
+}
+.indeximg {
+  width: 7.5rem;
+  height: 100%;
+  overflow: hidden;
+  background: url("../../images/indeximg.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+.indeximg .conbox {
+  height: 100%;
+}
+.indeximg .conbox ul {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  flex-flow: row nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 1.5rem;
+  zoom: 1;
+}
+.indeximg .conbox ul li {
+  width: 5rem;
+  height: 1.5rem;
+  margin: .25rem;
+  line-height: 1.5rem;
+  box-shadow: 10px 15px 5px rgba(9, 55, 96, 0.4);
+}
+.indeximg .conbox ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  font-size: .48rem;
+  font-family: "STKaiti";
+  text-align: center;
+  color: #fcfcfc;
+  background: rgba(197, 223, 248, 0.3);
+  text-shadow: 1px 1px 0 #656C75;
+}
+.img_joke {
+  width: 7rem;
+  padding-top: 1.2rem;
+  padding: 0 .25rem;
+  background: #f8f8f8;
+}
+.img_joke .imglist {
+  margin: .08rem 0 .4rem;
+  padding-top: .3rem;
+  border-top: 1px solid #969696;
+}
+.img_joke .imglist img {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto;
+}
+.gif_joke {
+  width: 7rem;
+  padding: 0 .25rem;
+  padding-top: 1.2rem;
+}
+.gif_joke .gifList {
+  width: 3rem;
+  height: 3rem;
+  float: left;
+  margin-left: .5rem;
+  margin-bottom: .25rem;
+  overflow: hidden;
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+.gif_joke .gifList img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.weather {
+  width: 7.5rem;
+  padding-top: 1rem;
+}
+.weather .weather-hd {
+  width: 100%;
+  height: .3rem;
+  line-height: .3rem;
+  text-align: center;
+  font-size: .32rem;
+}
+.weather .weather-bd {
+  width: 7.5rem;
+  margin: 0 auto;
+  background: #f8f8f8;
+  overflow: hidden;
+  zoom: 1;
+}
+.weather .weather-bd ul {
+  zoom: 1;
+}
+.weather .weather-bd ul li {
+  float: left;
+  padding: 0 .25rem;
+  width: 7rem;
+  position: relative;
+}
+.weather .weather-bd ul li.now {
+  background: url("../../images/weather22.png") no-repeat;
+  background-size: cover;
+}
+.weather .weather-bd ul li.now .cityinfo {
+  display: inline-block;
+  position: absolute;
+  top: .5rem;
+  left: .5rem;
+  font-size: .32rem;
+  color: #d4237a;
+  padding-left: .48rem;
+  background: url('../../images/zuobiao.png') no-repeat;
+  background-size: contain;
+}
+.weather .weather-bd ul li.now .con {
+  width: 5rem;
+  margin: 0 auto ;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 0px 2px #000;
+}
+.weather .weather-bd ul li.now .con img {
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin: 0.25rem auto;
+}
+.weather .weather-bd ul li.now .con h3 {
+  font-size: .42rem;
+}
+.weather .weather-bd ul li.now .con p {
+  margin: .25rem 0;
+  font-size: .32rem;
+}
+.weather .weather-bd ul li.list {
+  background: url("../../images/2222.png") no-repeat;
+  background-size: cover;
+}
+.weather .weather-bd ul li.list .con {
+  width: 7rem;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  text-shadow: 0px 0px 2px #000;
+}
+.weather .weather-bd ul li.list .con .img {
+  width: 2rem;
+  float: left;
+}
+.weather .weather-bd ul li.list .con .img img {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.weather .weather-bd ul li.list .con .img p {
+  height: .48rem;
+  line-height: .48rem;
+  font-size: .24rem;
+}
+.weather .weather-bd ul li.list .con .img p em {
+  display: inline-block;
+  margin: 0 .25rem;
+}
+.weather .weather-bd ul li.list .con .txt {
+  width: 5rem;
+  float: right;
+}
+.weather .weather-bd ul li.list .con .txt p {
+  margin: .25rem 0;
+  font-size: .24rem;
+}
+.history {
+  width: 7.5rem;
+  padding-top: 1.2rem;
+}
+.history .hd {
+  width: 7rem;
+  padding: 0 .25rem;
+  height: .8rem;
+  line-height: .8rem;
+  text-align: center;
+  font-size: .32rem;
+  color: #666;
+  background: #f8f8f8;
+}
+.history .bd {
+  width: 7rem;
+  padding: 0 .25rem;
+}
+.history .bd .list {
+  height: auto;
+  overflow: hidden;
+  margin: .25rem 0;
+  padding: .15rem 0;
+  border-top: 1px solid #ccc;
+}
+.history .bd .list img {
+  float: left;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  border: 1px solid #ff6600;
+}
+.history .bd .list .tit {
+  float: right;
+  width: 5rem;
+  font-size: .32rem;
+  height: 1.2rem;
+  display: table;
+}
+.history .bd .list .tit span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  line-height: .48rem;
+}

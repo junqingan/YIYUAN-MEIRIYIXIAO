@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="icon" href="../images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <title>哈哈哈</title>
+    <script type="text/javascript">
+        (function (designW) {
+            var docEl = document.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 100 * (clientWidth / designW) + 'px';
+                };
+            if (!document.addEventListener) return;
+            recalc();
+            window.addEventListener(resizeEvt, recalc, false);
+            document.addEventListener('DOMContentLoaded', recalc, false);
+        })(750);
+    </script>
+</head>
+
+<body>
+    <div class="weaper">
+        <div class="hd"><a href="/"><i></i> 返回</a>搞笑图片</div>
+        <div class="img_joke"></div>
+    </div>
+
+    <script src="../js/home.js"></script>
+</body>
+
+</html>
